@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Formulário de Cadastro</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="nome">Nome:</label>
+            <input 
+               type="text" placeholder="Digite seu nome aqui" name="nome" id="nome" required>
+        </div>
+        
+        <br>
+        
+        <div>
+            <label>E-mail:</label>
+            <input type="email" placeholer="Digite seu email" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="why-motivation-textarea">O que te motivou a participar do evento?</label>
+
+          <br>
+
+            <textarea id="why-motivation-textarea" placeholder="Digite aqui..."></textarea>
+        </div>
+        
+        <br>
+        
+        <div>
+            <label>Selecione o seu módulo:</label>
+          <br>
+            <select>
+              <option selected disabled>Selecione seu módulo</option>
+              <option value="M1">M1
+              </option>
+              <option value="M2">M2
+              </option>
+              <option value="M3">M3
+              </option>
+              <option value="M4">M4
+              </option>
+              <option value="M5">M5
+              </option>
+              <option value="M6">M6
+              </option>
+            </select>
+        </div>
+        
+        <br>
+        
+        <div>
+            <label for="password">Escolha uma senha:</label>
+
+            <br>
+
+            <input type="password" required id="password" placeholder="Escolha sua senha"></input>
+        </div>
+
+        <fieldset>
+            <legend>Deseja receber novidades pelo email?</legend>
+            <input type="radio" value="sim" id="yes" name="news-on-email">  </input>
+            <label for="yes">Sim</label>
+            <input type="radio" value="Não" id="no" name="news-on-email"></input>
+            <label for="no">Não</label>
+        </fieldset>
+        <input type="submit" value="Cadastrar"/>  
+    </form>
+</body>
+</html>
